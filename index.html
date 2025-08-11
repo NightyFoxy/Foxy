@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Foxy v12 — Cycle & Wellbeing</title>
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkY5NDY2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGNkEwMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIyNCIgZmlsbD0iIzFhMWExYSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2LDIwKSI+CiAgICA8cGF0aCBkPSJNMTYgNDIgQzE2IDIwLCA0NiAwLCA0OCAwIEM1MCAwLCA4MCAyMCwgODAgNDIgQzgwIDY2LCA2MCA4MCwgNDggODAgQzM2IDgwLCAxNiA2NiwgMTYgNDIgWiIgZmlsbD0idXJsKCNnKSIvPgogICAgPHBhdGggZD0iTTIyIDQ2IGM4LTYgMTQtNiAyMiAwIGMtMyAxMi0xNiAxOC0yMiAweiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZD0iTTQ4IDQ2IGM4LTYgMTQtNiAyMiAwIGMtMyAxMi0xNiAxOC0yMiAweiIgZmlsbD0iI2ZmZiIvPgogICAgPGNpcmNsZSBjeD0iNDAiIGN5PSI1MCIgcj0iMy41IiBmaWxsPSIjMWExYTFhIi8+CiAgICA8Y2lyY2xlIGN4PSI1OCIgY3k9IjUwIiByPSIzLjUiIGZpbGw9IiMxYTFhMWEiLz4KICAgIDxwYXRoIGQ9Ik00MiA2NCBjNCA0IDggNCAxMiAwIiBzdHJva2U9IiMxYTFhMWEiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik0xMCAzNCBDOCAyNCwgMiAxOSwgLTMgMTcgQzQgMTQsIDE2IDE3LCAyMiAyNiBaIiBmaWxsPSJ1cmwoI2cpIi8+CiAgICA8cGF0aCBkPSJNODYgMzQgQzg4IDI0LCA5NCAxOSwgOTkgMTcgQzkyIDE0LCA4MCAxNywgNzQgMjYgWiIgZmlsbD0idXJsKCNnKSIvPgogIDwvZz4KPC9zdmc+">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script>window.__FOXY_FOX__ = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkY5NDY2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGNkEwMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIyNCIgZmlsbD0iIzFhMWExYSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2LDIwKSI+CiAgICA8cGF0aCBkPSJNMTYgNDIgQzE2IDIwLCA0NiAwLCA0OCAwIEM1MCAwLCA4MCAyMCwgODAgNDIgQzgwIDY2LCA2MCA4MCwgNDggODAgQzM2IDgwLCAxNiA2NiwgMTYgNDIgWiIgZmlsbD0idXJsKCNnKSIvPgogICAgPHBhdGggZD0iTTIyIDQ2IGM4LTYgMTQtNiAyMiAwIGMtMyAxMi0xNiAxOC0yMiAweiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZD0iTTQ4IDQ2IGM4LTYgMTQtNiAyMiAwIGMtMyAxMi0xNiAxOC0yMiAweiIgZmlsbD0iI2ZmZiIvPgogICAgPGNpcmNsZSBjeD0iNDAiIGN5PSI1MCIgcj0iMy41IiBmaWxsPSIjMWExYTFhIi8+CiAgICA8Y2lyY2xlIGN4PSI1OCIgY3k9IjUwIiByPSIzLjUiIGZpbGw9IiMxYTFhMWEiLz4KICAgIDxwYXRoIGQ9Ik00MiA2NCBjNCA0IDggNCAxMiAwIiBzdHJva2U9IiMxYTFhMWEiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik0xMCAzNCBDOCAyNCwgMiAxOSwgLTMgMTcgQzQgMTQsIDE2IDE3LCAyMiAyNiBaIiBmaWxsPSJ1cmwoI2cpIi8+CiAgICA8cGF0aCBkPSJNODYgMzQgQzg4IDI0LCA5NCAxOSwgOTkgMTcgQzkyIDE0LCA4MCAxNywgNzQgMjYgWiIgZmlsbD0idXJsKCNnKSIvPgogIDwvZz4KPC9zdmc+";</script>
+  <script src="./app.js"></script>
+    
+
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+    <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyD7qQOXtH4uTc4liSy1M7ai1lRDiCnC9hQ",
+      authDomain: "foxy-49edc.firebaseapp.com",
+      projectId: "foxy-49edc",
+      storageBucket: "foxy-49edc.firebasestorage.app",
+      messagingSenderId: "115617075484",
+      appId: "1:115617075484:web:cfa3a6b48f8e19c4dbead9",
+      measurementId: "G-KBR3WM96B3"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    </script>
+    
+</body>
+</html>
